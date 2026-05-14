@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>G-TECH LIMITED | Industrial Solutions & Technical Services</title>
+  <meta name="description" content="G-TECH LIMITED delivers cutting-edge industrial maintenance, machinery installation, gas manufacturing (nitrogen & oxygen), and electromechanical contracting across Uganda. ISO-certified excellence."/>
+  <meta name="keywords" content="G-TECH LIMITED, industrial maintenance Mukono, nitrogen oxygen manufacturing, industrial machinery installation, technical services Uganda, industrial spares supply, electromechanical contracting"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#0052cc;
+      --secondary:#4b5563;
+      --accent:#6b7280;
+      --steel:#6b7280;
+      --muted:#f9fafb;
+      --white:#ffffff;
+      --dark:#1f2937;
+      --maxWidth:1240px;
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:var(--dark);background:var(--muted);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);width:94%;max-width:var(--maxWidth);display:flex;align-items:center;justify-content:space-between;z-index:100;padding:14px 24px;background:rgba(31,41,55,0.94);backdrop-filter:blur(16px);border-radius:999px;border:1px solid rgba(0,82,204,0.25)}
+    .brand{display:flex;align-items:center;gap:16px;color:var(--white)}
+    .brand strong{font-family:Poppins,sans-serif;font-size:1.1rem;letter-spacing:0.04em;color:var(--white)}
+    .brand span{font-size:0.75rem;color:var(--accent);font-weight:600;letter-spacing:0.15em;text-transform:uppercase}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--white);font-weight:600;padding:10px 16px;border-radius:999px;transition:background .3s ease,color .3s ease}
+    nav a:hover{background:var(--primary);color:var(--white)}
+    header.hero{position:relative;min-height:88vh;display:flex;align-items:center;justify-content:center;padding:120px 18px 80px;overflow:hidden;color:var(--white)}
+    .hero-media{position:absolute;inset:0}
+    .hero-slider{position:absolute;inset:0}
+    .hero-slider .slide{position:absolute;inset:0;opacity:0;transition:opacity 2.4s cubic-bezier(0.4,0,0.2,1),transform 14s cubic-bezier(0.4,0,0.2,1);background-size:cover;background-position:center;transform:scale(1.08)}
+    .hero-slider .slide:first-child{opacity:1}
+    .hero-slider .slide:nth-child(1){animation-delay:0s;background-image:url("https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=2400&q=90")}
+    .hero-slider .slide:nth-child(2){animation-delay:10s;background-image:url("https://images.unsplash.com/photo-1581092160562-40038f5b34e9?auto=format&fit=crop&w=2400&q=90")}
+    .hero-slider .slide:nth-child(3){animation-delay:20s;background-image:url("https://images.unsplash.com/photo-1581092915550-37ba5ba3cf44?auto=format&fit=crop&w=2400&q=90")}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(130deg,rgba(31,41,55,0.72),rgba(0,52,204,0.65))}
+    .hero-inner{position:relative;z-index:5;max-width:920px;text-align:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;background:rgba(107,114,128,0.2);font-weight:700;letter-spacing:0.08em;text-transform:uppercase;font-size:0.76rem;color:rgba(248,249,250,0.95)}
+    h1{margin:18px 0 14px;font-family:Poppins,sans-serif;font-size:clamp(32px,5vw,62px);font-weight:700}
+    p.lead{margin:0 auto 26px;max-width:640px;font-size:1.1rem;color:rgba(248,249,250,0.94)}
+    .cta{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 24px;font-weight:700;border-radius:14px;font-size:0.95rem;transition:transform .3s ease,box-shadow .3s ease,background .3s ease;box-shadow:0 14px 28px rgba(0,52,204,0.28)}
+    .btn.primary{background:var(--primary);color:var(--white);border:2px solid rgba(248,249,250,0.4)}
+    .btn.secondary{background:rgba(107,114,128,0.12);color:var(--white);border:2px solid var(--white);box-shadow:none}
+    .btn:hover{transform:translateY(-3px);box-shadow:0 18px 32px rgba(0,52,204,0.36)}
+    .hero-stats{margin-top:34px;display:flex;justify-content:center;gap:26px;flex-wrap:wrap;color:rgba(248,249,250,0.92)}
+    .hero-stats div{min-width:140px}
+    .hero-stats strong{display:block;font-family:Poppins,sans-serif;font-size:1.8rem;color:rgba(248,249,250,0.98)}
+    .hero-stats span{display:block;margin-top:6px;font-size:0.92rem;line-height:1.5;color:rgba(248,249,250,0.88)}
+    .video-card{display:grid;grid-template-columns:1.1fr 0.9fr;gap:32px;align-items:center}
+    .video-media video{width:100%;border-radius:18px;box-shadow:0 28px 50px rgba(15,15,15,0.28)}
+    .video-copy{display:flex;flex-direction:column;gap:18px}
+    .video-copy .sub{margin:0;color:var(--steel)}
+    .video-list{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+    .video-list li{display:flex;align-items:flex-start;gap:12px;font-weight:600;color:var(--dark)}
+    .video-bullet{width:12px;height:12px;margin-top:6px;border-radius:50%;background:linear-gradient(140deg,#0052cc,#4b5563)}
+    main{max-width:var(--maxWidth);margin:0 auto;padding:0 20px 120px}
+    section.card{background:var(--white);border-radius:var(--radius);padding:54px;border:1px solid rgba(0,0,0,0.08);box-shadow:0 34px 60px rgba(0,0,0,0.08);margin-top:-80px;position:relative;overflow:hidden}
+    section.card:not(:first-of-type){margin-top:60px}
+    section.card::after{content:"";position:absolute;inset:auto -40% -40% auto;width:320px;height:320px;background:radial-gradient(circle,rgba(0,52,204,0.08),transparent 65%);z-index:0;transform:rotate(18deg)}
+    section.card > *{position:relative;z-index:1}
+    .kicker{font-weight:700;color:var(--primary);letter-spacing:0.1em;text-transform:uppercase;font-size:0.72rem;margin-bottom:16px}
+    h2{font-family:Poppins,sans-serif;font-weight:600;font-size:2.2rem;margin:0 0 20px;color:var(--dark)}
+    h3{font-family:Poppins,sans-serif;font-weight:600;font-size:1.6rem;margin:0 0 16px;color:var(--dark)}
+    p.sub{max-width:860px;color:var(--steel);font-size:1rem;margin:0 0 26px}
+    .about-grid{display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .pill{display:inline-flex;align-items:center;padding:12px 16px;border-radius:14px;background:linear-gradient(120deg,rgba(0,52,204,0.08),rgba(107,114,128,0.1));font-weight:600;color:var(--primary)}
+    .values-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .value{padding:22px;border-radius:16px;background:linear-gradient(180deg,rgba(248,249,250,0.92),var(--white));border:1px solid rgba(0,0,0,0.06);transition:transform .35s ease,box-shadow .35s ease}
+    .value:hover{transform:translateY(-6px);box-shadow:0 18px 42px rgba(0,0,0,0.12)}
+    .grid.services{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .service{padding:26px;border-radius:18px;background:linear-gradient(160deg,rgba(0,52,204,0.04),rgba(255,255,255,0.96));border:1px solid rgba(0,52,204,0.1);display:flex;flex-direction:column;gap:12px;transition:transform .3s ease,box-shadow .3s ease}
+    .service span{font-weight:600;font-family:Poppins,sans-serif;color:var(--primary)}
+    .service:hover{transform:translateY(-8px);box-shadow:0 24px 44px rgba(0,52,204,0.12)}
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+    .project{position:relative;border-radius:18px;overflow:hidden;min-height:280px;background:var(--muted);display:flex;align-items:flex-end;justify-content:flex-start;padding:28px;color:var(--white);transition:transform .4s ease}
+    .project::before{content:"";position:absolute;inset:0;background:var(--secondary);opacity:0.48;transition:opacity .3s ease}
+    .project::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(31,41,55,0),rgba(31,41,55,0.88));opacity:1}
+    .project-content{position:relative;z-index:1;max-width:220px}
+    .project h4{margin:0 0 8px;font-family:Poppins,sans-serif;font-size:1.2rem}
+    .project p{margin:0;font-size:0.95rem;color:#e8e8e8}
+    .project:hover{transform:translateY(-10px)}
+    .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .person{padding:28px;border-radius:18px;background:var(--white);border:1px solid rgba(0,0,0,0.08);box-shadow:0 22px 36px rgba(0,0,0,0.08);text-align:center;transition:transform .3s ease,box-shadow .3s ease}
+    .person img{width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:16px;box-shadow:0 16px 28px rgba(0,0,0,0.15)}
+    .person h4{margin:0;font-family:Poppins,sans-serif;font-size:1.15rem;color:var(--primary)}
+    .person p{margin:10px 0 0;color:var(--steel);font-size:0.95rem}
+    .person:hover{transform:translateY(-6px);box-shadow:0 26px 46px rgba(0,0,0,0.12)}
+    .contact-row{display:grid;grid-template-columns:1.1fr 0.9fr;gap:28px;align-items:start}
+    .contact-card{padding:32px;border-radius:18px;background:linear-gradient(160deg,rgba(0,0,0,0.04),rgba(192,192,192,0.06));border:1px solid rgba(0,0,0,0.08)}
+    .contact-card a{color:var(--primary);font-weight:600}
+    .contact-list{display:grid;gap:16px;margin-top:18px}
+    .contact-pill{display:flex;align-items:center;gap:14px;padding:16px;border-radius:14px;background:rgba(255,255,255,0.92);font-weight:600;color:var(--primary)}
+    .map-wrap{border-radius:18px;overflow:hidden;box-shadow:0 24px 40px rgba(0,0,0,0.12)}
+    .map-wrap iframe{width:100%;height:100%;min-height:360px;border:0}
+    footer{margin:0 auto;max-width:var(--maxWidth);padding:46px 20px;border-radius:24px;background:linear-gradient(120deg,var(--primary),var(--secondary));color:var(--white);display:grid;gap:18px;justify-items:center;text-align:center}
+    .footer-links{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+    .socials{display:flex;gap:18px}
+    .socials a{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(255,255,255,0.12);transition:transform .3s ease,background .3s ease}
+    .socials a:hover{transform:translateY(-4px);background:var(--primary)}
+    .floating-contact{position:fixed;right:24px;bottom:26px;z-index:120;background:linear-gradient(120deg,var(--primary),var(--accent));color:var(--white);padding:16px 22px;border-radius:999px;font-weight:700;display:flex;align-items:center;gap:10px;box-shadow:0 26px 48px rgba(0,0,0,0.28);transition:transform .3s ease}
+    .floating-contact:hover{transform:translateY(-6px)}
+    @keyframes heroCycle{0%{opacity:1;transform:scale(1.08)}25%{opacity:1}33%{opacity:0;transform:scale(1.02)}100%{opacity:0}}
+    @media(max-width:1024px){nav{padding:10px 18px}nav ul{gap:12px}header.hero{padding:126px 32px 92px;min-height:82vh}h1{font-size:clamp(30px,5.4vw,54px)}p.lead{font-size:1.05rem}main{padding:0 18px 110px}section.card{padding:44px}}
+    @media(max-width:820px){nav{width:92%;left:50%;transform:translateX(-50%)}header.hero{padding:132px 24px 88px;min-height:78vh}.hero-inner{max-width:640px}p.lead{font-size:1rem}.hero-stats div{min-width:120px}.hero-stats strong{font-size:1.6rem}.video-card{grid-template-columns:1fr;gap:28px}.video-copy{align-items:flex-start}.contact-row{grid-template-columns:1fr}.map-wrap iframe{min-height:300px}.floating-contact{right:18px;bottom:20px}}
+    @media(max-width:640px){nav{flex-direction:column;gap:14px;padding:18px;border-radius:22px;top:12px}.brand strong{display:none}nav ul{flex-wrap:wrap;justify-content:center}header.hero{padding:150px 20px 76px;min-height:auto}.hero-inner{padding-top:16px;max-width:100%}.eyebrow{font-size:0.7rem}h1{font-size:clamp(30px,9vw,44px)}p.lead{font-size:0.98rem}.cta{gap:12px}.btn{width:100%;max-width:260px}.hero-stats{gap:18px}.hero-stats div{min-width:110px}.hero-stats strong{font-size:1.5rem}.hero-stats span{font-size:0.86rem}.video-card{gap:24px}.video-copy{gap:16px}.video-media video{border-radius:16px}.video-list li{font-size:0.96rem}section.card{padding:28px;margin-top:32px}main{padding:0 16px 90px}.projects-grid{grid-template-columns:1fr}.team-grid{grid-template-columns:1fr}.contact-card{padding:28px}.floating-contact{left:50%;transform:translateX(-50%);right:auto}}
+    @media(max-width:480px){body{font-size:0.97rem}nav{padding:16px 16px}header.hero{padding:158px 18px 70px}h1{font-size:clamp(28px,10.5vw,40px)}p.lead{font-size:0.94rem}.eyebrow{padding:8px 14px}.cta{gap:10px}.btn{max-width:100%}.hero-stats{gap:14px}.hero-stats strong{font-size:1.35rem}.hero-stats span{font-size:0.82rem}.video-card{gap:20px}.video-copy{gap:14px}.video-list li{font-size:0.9rem}.video-bullet{width:10px;height:10px;margin-top:5px}section.card{padding:24px}main{padding:0 14px 78px}.contact-card{padding:24px}.map-wrap iframe{min-height:260px}footer{padding:40px 18px}.floating-contact{width:88%;max-width:320px}}
+  </style>
+</head>
+<body>
+  <nav role="navigation" aria-label="Primary">
+    <div class="brand">
+      <svg width="56" height="56" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="100%" stop-color="#c0c0c0"/>
+          </linearGradient>
+        </defs>
+        <rect x="12" y="12" width="40" height="40" fill="none" stroke="url(#grad)" stroke-width="3" rx="4"/>
+        <path d="M20 24h24" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+        <path d="M20 32h24" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+        <path d="M20 40h16" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <strong>G-TECH LIMITED</strong>
+        <span>We Pay Attention</span>
+      </div>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#capabilities">Capabilities</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-media">
+      <div class="hero-slider">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+      </div>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-inner" data-aos="fade-up" data-aos-duration="900">
+      <div class="eyebrow">Industrial Excellence • Technical Precision • Industrial Solutions</div>
+      <h1>Powering Industrial Innovation Across Uganda</h1>
+      <p class="lead">G-TECH LIMITED delivers comprehensive industrial maintenance, machinery installation, gas manufacturing, and electromechanical contracting solutions with precision, reliability, and unwavering attention to detail.</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Request a Consultation</a>
+        <a class="btn secondary" href="#capabilities">Explore Our Capabilities</a>
+      </div>
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+        <div><strong>15+</strong><span>Years of trusted industrial solutions in Uganda.</span></div>
+        <div><strong>35+</strong><span>Skilled engineers, technicians, and specialists.</span></div>
+        <div><strong>100+</strong><span>Successful industrial projects completed.</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="card" id="showcase" data-aos="fade-up">
+      <div class="kicker">Industrial Operations</div>
+      <h2>Advanced Solutions in Motion</h2>
+      <div class="video-card">
+        <div class="video-media">
+          <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1600&q=80">
+            <source src="https://cdn.pixabay.com/video/2020/09/03/50638-456561316_large.mp4" type="video/mp4"/>
+          </video>
+        </div>
+        <div class="video-copy">
+          <p class="sub">From machinery installation to precision maintenance, G-TECH Limited brings industrial excellence to every project across Mukono and beyond, ensuring optimal performance and uninterrupted operations.</p>
+          <ul class="video-list">
+            <li><span class="video-bullet"></span><span>Industrial machinery installation and commissioning</span></li>
+            <li><span class="video-bullet"></span><span>Nitrogen and oxygen gas manufacturing and supply</span></li>
+            <li><span class="video-bullet"></span><span>Preventive and corrective maintenance programs</span></li>
+            <li><span class="video-bullet"></span><span>ISO-certified electrical and electromechanical services</span></li>
+          </ul>
+          <a class="btn primary" href="#services">Discover Our Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="about" data-aos="fade-up">
+      <div class="kicker">About G-TECH Limited</div>
+      <h2>Industrial Expertise, Trusted Solutions</h2>
+      <p class="sub">Based in Mukono, Uganda (Mukono Kayunga Road, Block 149, Plot 1105), G-TECH Limited is a premier industrial services provider serving major regional contractors and industrial operators across East Africa. Our team of over 35 professionals—engineers, technicians, quality specialists, and economists—delivers precision-engineered solutions for industrial maintenance, machinery installation, gas manufacturing, civil works, and electromechanical contracting.</p>
+      <div class="about-grid">
+        <div class="value" data-aos="fade-right">
+          <span class="pill">Mission</span>
+          <p>Deliver industrial excellence through innovative solutions, precision engineering, and unwavering attention to detail—we pay attention to every detail.</p>
+        </div>
+        <div class="value" data-aos="fade-right" data-aos-delay="120">
+          <span class="pill">Vision</span>
+          <p>Become East Africa's most trusted provider of industrial solutions, recognised for reliability, innovation, and technical mastery across all sectors.</p>
+        </div>
+        <div class="value" data-aos="fade-right" data-aos-delay="200">
+          <span class="pill">Excellence</span>
+          <p>ISO-certified quality, rigorous safety standards, timely delivery, and professional expertise ensure every project exceeds expectations and industry standards.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="services" data-aos="fade-up">
+      <div class="kicker">Core Services</div>
+      <h2>Comprehensive Industrial Solutions</h2>
+      <div class="grid services">
+        <div class="service" data-aos="zoom-in"><span>Industrial Machinery Installation</span><p>Complete installation, alignment, commissioning, and startup support for production equipment across all sectors.</p></div>
+        <div class="service" data-aos="zoom-in" data-aos-delay="80"><span>Gas Manufacturing & Supply</span><p>Premium nitrogen and oxygen gas production, purification, and reliable supply systems for industrial applications.</p></div>
+        <div class="service" data-aos="zoom-in" data-aos-delay="160"><span>Preventive Maintenance</span><p>Scheduled inspections, lubrication, component replacement, and predictive maintenance to maximise equipment uptime.</p></div>
+        <div class="service" data-aos="zoom-in" data-aos-delay="240"><span>Industrial Spares Supply</span><p>High-quality replacement parts, bearing services, and emergency component sourcing for critical operations.</p></div>
+        <div class="service" data-aos="zoom-in" data-aos-delay="320"><span>Electromechanical Contracting</span><p>Electrical installations, control systems integration, automation, and power distribution for industrial facilities.</p></div>
+        <div class="service" data-aos="zoom-in" data-aos-delay="400"><span>Workshop Services</span><p>In-house fabrication, welding, machining, repair, and fabrication services for custom and standard components.</p></div>
+        <div class="service" data-aos="zoom-in" data-aos-delay="480"><span>Civil Works & Infrastructure</span><p>Building construction, maintenance, structural reinforcement, and facility upgrades for industrial sites.</p></div>
+        <div class="service" data-aos="zoom-in" data-aos-delay="560"><span>Design & Engineering</span><p>Custom design services, technical consultancy, system optimisation, and ISO-certified engineering solutions.</p></div>
+      </div>
+    </section>
+
+    <section class="card" id="capabilities" data-aos="fade-up">
+      <div class="kicker">Industrial Capabilities</div>
+      <h2>What Sets G-TECH Limited Apart</h2>
+      <p class="sub">With over 15 years of proven industrial expertise, our diverse team brings multidisciplinary capabilities to every challenge, ensuring world-class solutions tailored to your operational needs.</p>
+      <div class="projects-grid">
+        <div class="project" style="background-image:url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=80');" data-aos="fade-up">
+          <div class="project-content">
+            <h4>Industrial Machinery Installation</h4>
+            <p>Heavy-duty equipment setup, alignment, commissioning for manufacturing plants and production lines.</p>
+          </div>
+        </div>
+        <div class="project" style="background-image:url('https://images.unsplash.com/photo-1581092943960-ce0a0d4a0fef?auto=format&fit=crop&w=1200&q=80');" data-aos="fade-up" data-aos-delay="80">
+          <div class="project-content">
+            <h4>Nitrogen & Oxygen Manufacturing</h4>
+            <p>Complete gas production plants, purity systems, and industrial-scale cryogenic equipment operations.</p>
+          </div>
+        </div>
+        <div class="project" style="background-image:url('https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=1200&q=80');" data-aos="fade-up" data-aos-delay="160">
+          <div class="project-content">
+            <h4>Welding & Fabrication</h4>
+            <p>Precision welding, metal fabrication, and structural steel work for industrial construction projects.</p>
+          </div>
+        </div>
+        <div class="project" style="background-image:url('https://images.unsplash.com/photo-1581092162562-40038f5b34e9?auto=format&fit=crop&w=1200&q=80');" data-aos="fade-up" data-aos-delay="240">
+          <div class="project-content">
+            <h4>Plant Maintenance Programs</h4>
+            <p>Preventive maintenance, equipment servicing, and emergency support for continuous operations.</p>
+          </div>
+        </div>
+        <div class="project" style="background-image:url('https://images.unsplash.com/photo-1569163139394-de4798aa62b3?auto=format&fit=crop&w=1200&q=80');" data-aos="fade-up" data-aos-delay="320">
+          <div class="project-content">
+            <h4>Gas Cylinder & Tank Supply</h4>
+            <p>Industrial spare parts, gas cylinders, pressure vessels, and component supply management systems.</p>
+          </div>
+        </div>
+        <div class="project" style="background-image:url('https://images.unsplash.com/photo-1581092163144-16efe8d13177?auto=format&fit=crop&w=1200&q=80');" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-content">
+            <h4>Plant Engineering & Design</h4>
+            <p>Full engineering design, industrial plant layout, and system integration for turnkey projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="contact" data-aos="fade-up">
+      <div class="kicker">Get In Touch</div>
+      <h2>Partner With G-TECH Limited</h2>
+      <div class="contact-row">
+        <div class="contact-card">
+          <h3>Let's Collaborate</h3>
+          <p>We respond promptly to discuss your industrial needs, project scope, timelines, and deliver customised solutions for optimal results.</p>
+          <div class="contact-list">
+            <div class="contact-pill">📍 Mukono-Kayunga Road, Block 149, Plot 1105 (after Mpoma Satellite Station), Mukono, Uganda</div>
+            <div class="contact-pill">Tel: <a href="tel:+256706559028">+256 706 559 028</a> | <a href="tel:+256704010392174934">+256 704 0103921 74934</a></div>
+            <div class="contact-pill">Mob: <a href="tel:+256752735200">+256 752 735 200</a> | <a href="tel:+256782069922">+256 782 069 922</a></div>
+            <div class="contact-pill">Email: <a href="mailto:admin@gtechlimited.com">admin@gtechlimited.com</a> | <a href="mailto:gtechlimited07@gmail.com">gtechlimited07@gmail.com</a></div>
+            <div class="contact-pill">P.O. Box: 903, Mukono, Uganda</div>
+          </div>
+          <div style="margin-top:28px;font-weight:600;color:var(--steel);line-height:1.8">
+            <div>Operating Hours: Monday to Saturday, 07:30 – 17:30 EAT</div>
+            <div style="margin-top:16px;font-size:0.9rem;color:var(--primary)">ISO 9001:2015 (Bureau Veritas) • Cert No.: AFR 21.00367 ENG</div>
+            <div style="font-size:0.9rem;color:var(--primary)">ISO 45001:2018 (MQA UK) • Cert No.: 2022MQA2560186.0</div>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe loading="lazy" src="https://www.google.com/maps?q=Mukono+Kayunga+Road+Block+149+Mukono+Uganda&output=embed" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div style="font-family:Poppins,sans-serif;font-size:1.4rem;font-weight:700">G-TECH LIMITED</div>
+    <div style="font-size:0.95rem;color:rgba(248,249,250,0.9);font-weight:600;letter-spacing:0.1em">WE PAY ATTENTION</div>
+    <div style="font-size:0.9rem;line-height:1.6">Mukono-Kayunga Road, Block 149, Plot 1105 (after Mpoma Satellite Station), Mukono, Uganda | P.O. Box 903</div>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div style="font-size:0.9rem"><a href="mailto:admin@gtechlimited.com" style="color:rgba(248,249,250,0.9)">admin@gtechlimited.com</a> | <a href="tel:+256706559028" style="color:rgba(248,249,250,0.9)">+256 706 559 028</a> | <a href="tel:+256752735200" style="color:rgba(248,249,250,0.9)">+256 752 735 200</a></div>
+    <div style="font-size:0.85rem;color:rgba(248,249,250,0.85);margin-top:8px">ISO 9001:2015 (AFR 21.00367 ENG) • ISO 45001:2018 (2022MQA2560186.0)</div>
+    <div class="socials">
+      <a href="https://www.linkedin.com" aria-label="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.26 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-7.9c0-1.88-.03-4.3-2.62-4.3-2.63 0-3.03 2.05-3.03 4.16V24H8z"/></svg>
+      </a>
+      <a href="https://www.facebook.com" aria-label="Facebook">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.658-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.763v2.312h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z"/></svg>
+      </a>
+      <a href="https://www.twitter.com" aria-label="Twitter">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.37 8.66 8.66 0 01-2.73 1.05A4.27 4.27 0 0016.1 4c-2.37 0-4.29 1.92-4.29 4.29 0 .34.04.68.11 1A12.12 12.12 0 013 5.1a4.28 4.28 0 001.32 5.72 4.23 4.23 0 01-1.94-.54v.05c0 2.07 1.47 3.8 3.43 4.19-.36.1-.74.15-1.13.15-.28 0-.54-.03-.81-.08.55 1.73 2.13 2.98 4.01 3.01A8.6 8.6 0 012 19.54 12.11 12.11 0 008.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.37-.01-.55A8.35 8.35 0 0022.46 6z"/></svg>
+      </a>
+    </div>
+    <div style="opacity:0.84">&copy; 2025 G-TECH LIMITED. All Rights Reserved. | ISO-Certified Industrial Services Provider</div>
+  </footer>
+
+  <a class="floating-contact" href="#contact">Contact Us</a>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({once:true,duration:800,easing:'ease-out-cubic'});
+    document.querySelectorAll('nav a').forEach(link=>{
+      link.addEventListener('click',event=>{
+        event.preventDefault();
+        const target=document.querySelector(link.getAttribute('href'));
+        if(target){
+          target.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      });
+    });
+    const slides=document.querySelectorAll('.hero-slider .slide');
+    let current=0;
+    setInterval(()=>{
+      slides[current].style.opacity=0;
+      current=(current+1)%slides.length;
+      slides[current].style.opacity=1;
+    },8000);
+  </script>
+</body>
+</html>
